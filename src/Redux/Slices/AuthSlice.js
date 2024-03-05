@@ -6,7 +6,7 @@ const initialState = {
     data: localStorage.getItem('data') || {}
 };
 
-const authSlice = createSliceL({
+const authSlice = createSlice({
     name: 'auth',
     initialState,
     reducers: {},
