@@ -13,7 +13,7 @@ function HomePage(){
                         </span>
                     </h1>
                     <p className="text-xl text-grey-200">
-                        We have a large library of courses taught by highly skilled and qualified facultiesa at a very affordables cost.
+                        We have a large library of courses taught by highly skilled and qualified faculties at a very affordables cost.
                     </p>
                     <div className="space-x-6">
                         <Link to="/courses">
