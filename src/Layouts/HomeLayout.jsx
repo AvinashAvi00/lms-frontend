@@ -3,6 +3,7 @@ import {AiFillCloseCircle} from 'react-icons/ai';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import Footer from '../Components/Footer';
+import { logout } from '../Redux/Slices/AuthSlice';
 
 function HomeLayout({ children }) {
 
@@ -88,10 +89,10 @@ function HomeLayout({ children }) {
                         {!isLoggedIn && (
                             <li className="absolute bottom-4 w-[90%]">
                                 <div className="w-full flex items-center justify-center">
-                                    <button className='btn-primary px-4 py-1 font-semibold rounded-md w-full'>
+                                    <button className='btn-primary px-4 py-1 font-semibold rounded-md bg-blue-800 w-full'>
                                         <Link to="/login">Login</Link>
                                     </button>
-                                    <button className='btn-secondary px-4 py-1 font-semibold rounded-md w-full'>
+                                    <button className='btn-secondary px-4 py-1 font-semibold rounded-md bg-pink-400 w-full'>
                                         <Link to="/signup">Signup</Link>
                                     </button>
                                 </div>
